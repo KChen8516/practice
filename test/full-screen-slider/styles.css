@@ -1,0 +1,47 @@
+:root {
+    /* track count of images */
+    --image-count: 6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    width: 100%; /* fallback */
+    /* width should now be the count of images * 100% */
+    width: calc(var(--image-count) * 100%);
+
+    /* each index increase moves to the next image */
+    /* transform: translate(calc(var(--i, 0)/var(--image-count)*-100%)); */
+    /* add a tx amount to show dragging behavior */
+    transform: translate(calc(var(--i, 0)/var(--image-count)*-100% + var(--tx, 0px)));
+
+    /* move to a class toggle */
+    /* transition: transform 0.5s ease-out; */
+
+    /* set an explicit container height */
+    overflow-y: hidden;
+    height: 50vw;
+    max-height: 100vh;
+}
+
+.gallery__image {
+    /* min-width: 100%; */
+    width: 100%; /* fallback */
+    /* each image should now be a fraction of the container width */
+    width: calc(100%/var(--image-count));
+
+    pointer-events: none;
+}
+
+.smooth {
+    /* transition: transform 0.5s ease-out; */
+    /* compute the velocity of the draggin */
+    transition: transform calc(var(--f, 1) * 0.5s) ease-out;
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5%;
+    font-size: 67.5%;
+}
+
+article {
+    display: block;
+    width: 955px;
+    margin: 0 auto;
+    position: relative;
+    height: 650px;
+}

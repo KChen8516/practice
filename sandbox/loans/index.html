@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <h1 class="title">Loan Calculator</h1>
+            <form class="loan">
+                <input type="text" id="amount" placeholder="Loan Amount" />
+                <input type="text" id="interest" placeholder="Interest" />
+                <input type="text" id="years" placeholder="Years to Repay" />
+                <input type="submit" id="calc-btn" value="Calculate" />
+            </form>
+            <!-- LOADER HERE -->
+            <div class="loader">
+                <img src="ajax-loader.gif" />
+            </div>
+            <!-- RESULTS -->
+            <div class="results">
+                <h4 class="results-title">Results</h4>
+                <div class="result-field">
+                    <label for="monthly-payment">Monthly Payment</label>
+                    <input type="number" id="monthly-payment" disabled />
+                </div>
+                <div class="result-field">
+                    <label for="total-payment">Total Payment</label>
+                    <input type="number" id="total-payment" disabled />
+                </div>
+                <div class="result-field">
+                    <label for="total-interest">Total Interest</label>
+                    <input type="number" id="total-interest" disabled />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

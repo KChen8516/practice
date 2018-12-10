@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <!-- timer buttons -->
+    <section class="timers">
+        <button data-time="30" class="timers__button">30 Secs</button>
+        <button data-time="300" class="timers__button">Work 5</button>
+        <button data-time="900" class="timers__button">Quick 15</button>
+        <button data-time="3600" class="timers__button">Lunch Break 60</button>
+        <form name="submit-time" id="time-form">
+            <input type="number" aria-label="time input" name="time" id="time-input" placeholder="Minutes">
+        </form>
+    </section>
+    
+    <!-- stopwatch  -->
+    <main class="stopwatch">
+        <div class="stopwatch__face">
+            <div class="stopwatch__hand stopwatch__hand--minutes"></div>
+            <div class="stopwatch__hand stopwatch__hand--seconds"></div>
+        </div>
+    </main>
+
+    <section class="display-time">
+        <span class="display-time__left">1:30</span>
+        <span class="display-time__end">1:30</span>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

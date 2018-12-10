@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container {
+    max-width: 750px;
+}
+
+.main-img {
+    margin: 0;
+}
+
+.main-img img, 
+.img-grid img {
+    width: 100%;
+}
+
+.img-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-item {
+    flex-basis: 25%;
+}

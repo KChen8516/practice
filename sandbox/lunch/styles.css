@@ -1,0 +1,23 @@
+html {
+    background: url('./food.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.names-list {
+    margin: 0;
+    padding: 0;
+}

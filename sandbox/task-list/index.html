@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body class="mdc-typography">
+
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--order-4">
+                <div class="mdc-card">
+
+                    <div class="card-content">
+                        <h5 class="card-title mdc-typography--headline5">Task List</h5>
+                        <form id="task-form">
+                            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                <input type="text" id="task-field" class="mdc-text-field__input">
+                                <label class="mdc-floating-label" for="task-field">Hint text</label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <input class="mdc-button mdc-button--raised" type="submit" value="Add Task" />
+                        </form>
+                    </div>
+
+                    <div class="card-action">
+                        <h5 class="mdc-typography--headline5" id="list-title">Tasks</h5>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input type="text" id="filter-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="filter-field">Filter Tasks</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <ul class="mdc-list" aria-orientation="vertical"></ul>
+                        <button class="mdc-button mdc-button--raised" id="clear-btn">Clear Tasks</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Automatically initialize any material DOM element with a data-mdc-auto-init attr and the Component Name -->
+    <script>window.mdc.autoInit();</script>
+    <script src="app.js"></script>
+</body>
+
+</html>

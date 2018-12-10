@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#add-book {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-book > label {
+    font-weight: bold;
+}
+
+#add-book > input {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#book-list {
+    text-align: center;
+}
+
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}

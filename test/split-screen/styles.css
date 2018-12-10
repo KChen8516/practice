@@ -1,0 +1,117 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+}
+
+.content__info {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.content__image {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+    font-size: 2rem;
+}
+
+.bottom {
+    background-color: #222;
+    z-index: 1;
+}
+
+.bottom .content__info {
+    right: 5%;
+}
+
+.bottom h1 {
+    color: #FDAB00;
+}
+
+.top {
+    background-color: #EEE;
+    width: 50vw;
+    z-index: 2;
+}
+
+.top h1 {
+    color: #222;
+}
+
+.top .content__info {
+    left: 5%;
+    color: #222;
+}
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #FDAB00;
+    width: 1rem;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.handle:hover {
+    cursor: pointer;
+}
+
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}

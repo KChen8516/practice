@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.add-names input {
+    padding: 20px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.group-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group-section--lists {
+    display: flex;
+}

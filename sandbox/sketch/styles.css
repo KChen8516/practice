@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sketch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+
+}
+
+.flex {
+    height: 60rem;
+    width: 40rem;
+    border: 1px solid black;
+}

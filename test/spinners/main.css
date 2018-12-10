@@ -1,0 +1,28 @@
+.spinner-1:before {
+    content: "";
+    box-sizing: border-box;
+    /* use the pseudo element */
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+
+    border-radius: 50%;
+
+    /* because the content is empty, border can be colored */
+    border: 3px solid lightgoldenrodyellow;
+    border-top-color: blueviolet;
+
+    animation: spinner 700ms ease-out infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Sandbox</title>
+</head>
+
+<body>
+    <h2>Variables</h2>
+    <button>Click Me</button>
+    <p>
+        <i>let</i> and
+        <i>const</i> are both supported by modern browsers and have better use cases due to their block level scoping</p>
+    <h4>The const keyword</h4>
+    <ul>
+        <li>const must be assigned a value prior to run time.</li>
+        <li>a const variable can be mutated but not reassigned (e.g. changing obj key/values, mutating arrays)</li>
+    </ul>
+
+    <h2>Data Types</h2>
+    <h4>Primitive</h4>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null (JavaScript bug shows typeof as object)</li>
+        <li>Undefined</li>
+        <li>Symbols (A new ES6 data type)</li>
+    </ul>
+    <h4>Reference</h4>
+    <ul>
+        <li>Arrays</li>
+        <li>Object Literals</li>
+        <li>Functions</li>
+        <li>Dates</li>
+        <li>Anything else...</li>
+    </ul>
+    <h4>Language Idiosyncracies</h4>
+    <ul>
+        <li>JS will do some automatic type conversion such as '5' + 6 = '56'</li>
+        <li>When calling sort on an array of numbers, it'll only sort the first digit. You need to provide a compare function.</li>
+        <li>When using a weaker comparison operator == JS will ignore data types when comparing (100 == '100' // true) </li>
+        <li>Using the === operator will check both the value and the type</li>
+    </ul>
+    <h4>ES6 Features</h4>
+    <ul>
+        <li>Template literals are capable of rendering function results and ternary operators!</li>
+        <li>Use the FOR IN loop to get key value pairs in an object literal</li>
+    </ul>
+    <h4>Immediately Invocable Function Expressions (IIFE)</h4>
+    <ul>
+        <li>Declared and run at the same time</li>
+        <li>Not useful combined with module patterns</li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+
+</html>
